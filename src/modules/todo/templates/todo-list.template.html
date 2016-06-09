@@ -1,0 +1,9 @@
+<ul class = 'list-group list-unstyled'>
+  <my-todo-item
+    class = 'list-group-item'
+    *ngFor = 'let todo of todos'
+    [todo] = 'todo'
+    (click) = 'onTodoSelect(todo)'
+    [class.active] = 'selectedTodo === todo'
+  ></my-todo-item>
+</ul>

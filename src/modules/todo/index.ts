@@ -1,0 +1,1 @@
+export { TodoModuleComponent } from './components/module.component';
