@@ -7,7 +7,7 @@ export var todos: Todo[] = [{
 }, {
   id: 2,
   name: 'Buy potatoes',
-  isDone: false
+  isDone: true
 }, {
   id: 3,
   name: 'Watch friends',

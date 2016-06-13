@@ -1,9 +1,21 @@
-<ul class = 'list-group list-unstyled'>
+<nav>
+  <ul class='nav nav-tabs'>
+    <li class = 'active'>
+      <a href = '#'>All</a>
+    </li>
+    <li>
+      <a href = '#'>Active</a>
+    </li>
+    <li>
+      <a href = '#'>Completed</a>
+    </li>
+  </ul>
+</nav>
+<ul *ngIf = "todos" class = 'list-group list-unstyled'>
   <my-todo-item
     class = 'list-group-item'
-    *ngFor = 'let todo of todos'
+    *ngFor = 'let todo of todos | todoFilter: filter'
     [todo] = 'todo'
     (click) = 'onTodoSelect(todo)'
-    [class.active] = 'selectedTodo === todo'
   ></my-todo-item>
 </ul>

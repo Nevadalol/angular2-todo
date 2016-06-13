@@ -1,5 +1,7 @@
 [
   "angular2/bundles/angular2-polyfills",
   "zone/lib/zone",
-  "reflect-metadata"
+  "reflect-metadata",
+  "bootstrap/dist/js/bootstrap",
+  "jquery/dist/jquery"
 ]

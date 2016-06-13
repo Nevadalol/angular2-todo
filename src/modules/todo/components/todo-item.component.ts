@@ -9,4 +9,8 @@ import { Todo } from '../domain/Todo';
 export class TodoItemComponent {
   @Input()
   public todo: Todo;
+
+  onTodoStateChange (event: Event) {
+    event.stopPropagation();
+  }
 }
